@@ -1,0 +1,46 @@
+! urxvt --------------------------------------------------------------- 
+
+*background: #080808
+*foreground: #BDBDBD
+
+URxvt.scrollBar: off
+!URxvt.font: -*-terminus-medium-r-*-*-12-*-*-*-*-*-*-*
+!urxvt*font: xft:Terminus:pixelsize=8,xft:Terminus:pixelsize=15
+URxvt*font:  -*-terminus-medium-*-*-*-12-*-*-*-*-*-*-*,xft:IPA Pゴシック:antialias=false
+URxvt*boldFont:  -*-terminus-medium-*-*-*-12-*-*-*-*-*-*-*
+URxvt*italicFont:  -*-terminus-medium-*-*-*-12-*-*-*-*-*-*-*
+URxvt*bolditalicFont:  -*-terminus-medium-*-*-*-12-*-*-*-*-*-*-*
+URxvt*termName:rxvt-unicode
+URxvt.jumpScroll: false
+URxvt.saveLines: 32
+URxvt.internalBorder: 0
+URxvt*loginShell: true
+
+!*mapAlert:         false
+!*visualBell:       galse
+*urgentOnBell:     true
+
+URxvt.url-launcher: /usr/bin/firefox
+URxvt.perl-ext-common:      default,clipboard,url-select,keyboard-select
+URxvt.url-select.launcher: firefox
+URxvt.url-select.underline: true
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.keysym.Shift-Control-C: perl:clipboard:copy
+URxvt.keysym.M-u:           perl:url-select:select_next
+URxvt.keysym.M-Escape:      perl:keyboard-select:activate
+URxvt.keysym.M-s:           perl:keyboard-select:search
+URxvt.iso14755: False
+URxvt.matcher.button: 1
+URxvt.colorUL: #2960C7
+urxvt.depth: 8
+!URxvt.transparent: false
+URxvt.scrollTtyOutput: false
+URxvt.scrollWithBuffer: true
+URxvt.scrollTtyKeypress: true
+urxvt*secondaryScroll: true
+urxvt*saveLines: 500
+URxvt*keysym.Home: \033[1~
+URxvt*keysym.End: \033[4~
+
+*color12:                       #547eff
+*color4: #554DFF
