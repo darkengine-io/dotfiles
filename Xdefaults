@@ -4,9 +4,7 @@
 *foreground: #BDBDBD
 
 URxvt.scrollBar: off
-!URxvt.font: -*-terminus-medium-r-*-*-12-*-*-*-*-*-*-*
-!urxvt*font: xft:Terminus:pixelsize=8,xft:Terminus:pixelsize=15
-URxvt*font:  -*-terminus-medium-*-*-*-12-*-*-*-*-*-*-*,xft:IPA Pゴシック:antialias=false
+URxvt*font:  -*-terminus-medium-*-*-*-12-*-*-*-*-*-*-*
 URxvt*boldFont:  -*-terminus-medium-*-*-*-12-*-*-*-*-*-*-*
 URxvt*italicFont:  -*-terminus-medium-*-*-*-12-*-*-*-*-*-*-*
 URxvt*bolditalicFont:  -*-terminus-medium-*-*-*-12-*-*-*-*-*-*-*
@@ -44,3 +42,6 @@ URxvt*keysym.End: \033[4~
 
 *color12:                       #547eff
 *color4: #554DFF
+
+URxvt.inputMethod: ibus
+URxvt.preeditType: OverTheSpot
