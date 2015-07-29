@@ -131,8 +131,8 @@ bindsym $mod+Shift+e exec "i3-msg exit"
 bindsym Pause exec "xscreensaver-command -lock"
 bindsym XF86ScreenSaver exec "xscreensaver-command -lock"
 #change volume
-bindsym XF86AudioRaiseVolume exec --no-startup-id ponymix incr 4
-bindsym XF86AudioLowerVolume exec --no-startup-id ponymix decr 4
+bindsym XF86AudioRaiseVolume exec --no-startup-id mixer vol +4
+bindsym XF86AudioLowerVolume exec --no-startup-id mixer vol -4
 bindsym XF86AudioMute exec --no-startup-id ponymix toggle
 bindsym XF86AudioPlay exec --no-startup-id mpc toggle
 bindsym XF86AudioNext exec --no-startup-id mpc next
