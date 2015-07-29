@@ -8,7 +8,7 @@ URxvt*font:  -*-terminus-medium-*-*-*-12-*-*-*-*-*-*-*
 URxvt*boldFont:  -*-terminus-medium-*-*-*-12-*-*-*-*-*-*-*
 URxvt*italicFont:  -*-terminus-medium-*-*-*-12-*-*-*-*-*-*-*
 URxvt*bolditalicFont:  -*-terminus-medium-*-*-*-12-*-*-*-*-*-*-*
-URxvt*termName:rxvt-unicode
+URxvt*termName:rxvt-unicode-256color
 URxvt.jumpScroll: false
 URxvt.saveLines: 32
 URxvt.internalBorder: 0
