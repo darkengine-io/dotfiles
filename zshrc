@@ -36,3 +36,6 @@ alias htop="htop -d 10"
 pms() {
 	make -C /usr/ports search name="$@"
 }
+
+keychain $HOME/.ssh/id_rsa
+source $HOME/.keychain/$(hostname)-sh
