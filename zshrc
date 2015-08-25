@@ -25,9 +25,9 @@ alias gc="git commit"
 
 alias rainymood="mpv --no-ytdl http://173.193.205.68/audio1110/0.ogg --no-video -loop inf"
 
-alias pm="sudo portmaster -dw --delete-build-only"
+alias pm="sudo portmaster -d --delete-build-only"
 alias pmr="sudo portmaster -de"
-alias pmu="sudo portmaster -adw --delete-build-only"
+alias pmu="sudo portmaster -ad --delete-build-only"
 
 alias free="freecolor -mo"
 
