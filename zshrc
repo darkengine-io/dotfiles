@@ -23,7 +23,7 @@ alias gd="git diff"
 alias ga="git add -p"
 alias gc="git commit"
 
-alias rainymood="mpv http://173.193.205.68/audio1110/0.ogg --no-video -loop inf"
+alias rainymood="mpv --no-ytdl http://173.193.205.68/audio1110/0.ogg --no-video -loop inf"
 
 alias pm="sudo portmaster -dw --delete-build-only"
 alias pmr="sudo portmaster -de"
