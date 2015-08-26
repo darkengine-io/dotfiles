@@ -1,0 +1,8 @@
+[core]
+	pager = less -r
+	excludesfile = ~/.gitignore
+[user]
+	email = simon@piston.pw
+	name = Simon McFarlane
+[push]
+	default = simple
