@@ -7,6 +7,7 @@ unsetopt beep
 bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
+precmd () {print -Pn "\e]0;%n@%m: %~\a"}
 zstyle :compinstall filename '/home/simon/.zshrc'
 
 autoload -Uz compinit
