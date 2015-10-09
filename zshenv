@@ -6,3 +6,4 @@ export XIM_PROGRAM="ibus-daemon"
 export XIM_ARGS="--daemonize --xim"
 export GOPATH=$HOME/.go
 export EDITOR=vim
+export XDG_CONFIG_HOME=$HOME/.config
