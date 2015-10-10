@@ -17,8 +17,6 @@ autoload -U promptinit
 promptinit
 prompt fade red
 
-alias ls="ls -lG"
-
 alias gs="git status"
 alias gd="git diff"
 alias ga="git add -p"
@@ -26,17 +24,25 @@ alias gc="git commit"
 
 alias rainymood="mpv --no-ytdl http://173.193.205.68/audio1110/0.ogg --no-video -loop inf"
 
+case $( uname -s ) in
+Linux)
+alias ls="ls -l --color"
+;;
+FreeBSD)
+alias ls="ls -lG"
+
 alias pm="sudo portmaster -d --delete-build-only"
 alias pmr="sudo portmaster -de"
 alias pmu="sudo portmaster -ad --delete-build-only"
 
 alias free="freecolor -mo"
-
-alias htop="htop -d 10"
-
 pms() {
 	make -C /usr/ports search name="$@"
 }
+;;
+esac
+
+alias htop="htop -d 10"
 
 keychain $HOME/.ssh/id_rsa
 source $HOME/.keychain/$(hostname)-sh
