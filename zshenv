@@ -7,3 +7,4 @@ export XIM_ARGS="--daemonize --xim"
 export GOPATH=$HOME/.go
 export EDITOR=vim
 export XDG_CONFIG_HOME=$HOME/.config
+export STEAM_FRAME_FORCE_CLOSE=1
