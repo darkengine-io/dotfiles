@@ -4,10 +4,10 @@
 *foreground: #BDBDBD
 
 URxvt.scrollBar: off
-URxvt*font:  -*-terminus-medium-*-*-*-12-*-*-*-*-*-*-*
-URxvt*boldFont:  -*-terminus-medium-*-*-*-12-*-*-*-*-*-*-*
-URxvt*italicFont:  -*-terminus-medium-*-*-*-12-*-*-*-*-*-*-*
-URxvt*bolditalicFont:  -*-terminus-medium-*-*-*-12-*-*-*-*-*-*-*
+URxvt*font:  xft:Terminus:medium:pixelsize=8
+URxvt*boldFont: xft:Terminus:medium:pixelsize=8
+URxvt*italicFont: xft:Terminus:medium:pixelsize=8
+URxvt*bolditalicFont: xft:Terminus:medium:pixelsize=8
 URxvt*termName:rxvt-unicode-256color
 URxvt.jumpScroll: false
 URxvt.saveLines: 32
