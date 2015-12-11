@@ -9,3 +9,9 @@ export EDITOR=vim
 export XDG_CONFIG_HOME=$HOME/.config
 export STEAM_FRAME_FORCE_CLOSE=1
 export QT_STYLE_OVERRIDE=gtk
+
+case $( uname -s ) in
+OpenBSD)
+export PKG_PATH=http://mirrors.sonic.net/pub/OpenBSD/$(uname -r)/packages/$(machine -a)/
+;;
+esac
