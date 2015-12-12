@@ -20,7 +20,7 @@ alias gd="git diff"
 alias ga="git add -p"
 alias gc="git commit"
 
-alias rainymood="mpv --no-ytdl http://173.193.205.68/audio1110/0.ogg --no-video -loop inf"
+alias rainymood="mpv --no-ytdl http://rainymood.com/audio1110/0.m4a --no-video --loop=inf"
 
 case $( uname -s ) in
 Linux)
