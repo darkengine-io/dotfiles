@@ -12,6 +12,6 @@ export QT_STYLE_OVERRIDE=gtk
 
 case $( uname -s ) in
 OpenBSD)
-export PKG_PATH=http://mirrors.sonic.net/pub/OpenBSD/$(uname -r)/packages/$(machine -a)/
+export PKG_PATH=http://mirrors.sonic.net/pub/OpenBSD/snapshots/packages/$(machine -a)/
 ;;
 esac
