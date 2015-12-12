@@ -13,9 +13,7 @@ zstyle :compinstall filename '/home/simon/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
-autoload -U promptinit
-promptinit
-prompt fade red
+export PROMPT='%F{red}%M%f %F{blue}%~%f %# '
 
 alias gs="git status"
 alias gd="git diff"
