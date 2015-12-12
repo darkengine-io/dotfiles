@@ -1,6 +1,6 @@
 #!/bin/sh
 xscreensaver -no-splash &
-feh --bg-fill ~/wallpaper.jpg &
+feh --bg-fill ~/.wallpaper.jpg &
 ibus-daemon --xim &
 redshift -l 45.5236111:-122.675 -t 6500:4900 &
 
