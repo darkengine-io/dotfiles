@@ -18,4 +18,4 @@ set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab smarttab smartindent
 
 set backspace=indent,eol,start
 
-colorscheme torte
+colorscheme default
