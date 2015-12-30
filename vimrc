@@ -14,8 +14,12 @@ set mouse=a
 set ttymouse=xterm2
 set ignorecase
 
-set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab smarttab smartindent
+set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
 
 set backspace=indent,eol,start
 
 colorscheme default
+
+call plug#begin('~/.vim/plugged')
+Plug 'MattesGroeger/vim-bookmarks'
+call plug#end()
