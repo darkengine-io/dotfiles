@@ -24,3 +24,5 @@ colorscheme default
 call plug#begin('~/.vim/plugged')
 Plug 'MattesGroeger/vim-bookmarks'
 call plug#end()
+
+:autocmd BufReadPost * :DetectIndent
