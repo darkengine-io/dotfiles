@@ -1,0 +1,8 @@
+[core]
+	pager = less -r
+	excludesfile = ~/.gitignore
+[user]
+	email = simon.mcfarlane@elementaltechnologies.com
+	name = Simon McFarlane
+[push]
+	default = simple
