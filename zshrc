@@ -38,6 +38,8 @@ pms() {
 	make -C /usr/ports search name="$@"
 }
 ;;
+OpenBSD)
+	alias ls="colorls -lG"
 esac
 
 alias htop="htop -d 10"
