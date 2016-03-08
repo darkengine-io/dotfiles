@@ -2,6 +2,8 @@ if has("gui_running")
 	set guioptions-=T
 	if has("gui_gtk2")
 		set guifont=Terminus\ 8
+		set guioptions-=r
+		:set guioptions-=m
 	elseif has("gui_win32")
 		language English_United States
 		set guifont=MS\ Gothic
@@ -19,7 +21,7 @@ autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 
 set backspace=indent,eol,start
 
-colorscheme default
+colorscheme jellybeans
 
 call plug#begin('~/.vim/plugged')
 Plug 'MattesGroeger/vim-bookmarks'
