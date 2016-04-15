@@ -22,6 +22,7 @@ autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 set backspace=indent,eol,start
 
 colorscheme jellybeans
+let g:jellybeans_use_gui_italics = 0
 
 call plug#begin('~/.vim/plugged')
 Plug 'MattesGroeger/vim-bookmarks'
