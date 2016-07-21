@@ -2,7 +2,7 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/simon/.gtkrc-2.0.mine"
-gtk-theme-name="Zen-nokto"
+gtk-theme-name="Arc-Dark"
 gtk-icon-theme-name="hicolor"
 gtk-font-name="DejaVu Sans 9"
 gtk-cursor-theme-size=0
