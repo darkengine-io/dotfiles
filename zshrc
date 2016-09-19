@@ -13,6 +13,18 @@ zstyle :compinstall filename '/home/simon/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+# fix for TRAMP mode
+if [[ "$TERM" == "dumb" ]]
+then
+    unsetopt zle
+    unsetopt prompt_cr
+    unsetopt prompt_subst
+    unfunction precmd
+    unfunction preexec
+    PS1='$ '
+fi
+
 export PROMPT='%F{red}%M%f %F{blue}%~%f %# '
 
 alias gs="git status"
