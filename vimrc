@@ -3,7 +3,7 @@ if has("gui_running")
 	if has("gui_gtk2")
 		set guifont=Terminus\ 8
 		set guioptions-=r
-		:set guioptions-=m
+		set guioptions-=m
 	elseif has("gui_win32")
 		language English_United States
 		set guifont=MS\ Gothic
