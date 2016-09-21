@@ -22,9 +22,19 @@ autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 set backspace=indent,eol,start
 
 let g:jellybeans_use_gui_italics = 0
-colorscheme jellybeans
+let g:molokai_original = 1
+let g:rehash256 = 1
+colorscheme molokai
 
 call plug#begin('~/.vim/plugged')
 Plug 'MattesGroeger/vim-bookmarks'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 highlight clear SignColumn
+
+" Enable the list of buffers
+let g:airline#extensions#tabline#enabled = 1
+
+" Show just the filename
+let g:airline#extensions#tabline#fnamemod = ':t'
