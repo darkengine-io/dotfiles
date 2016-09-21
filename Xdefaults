@@ -41,7 +41,7 @@ URxvt*keysym.End: \033[4~
 
 ! Molokai theme
 urxvt.depth:        32
-urxvt.background:   #272822
+urxvt.background:   #191A16
 URxvt*foreground:   #F8F8F2
 URxvt*cursorColor:  #FFFFFF
 
