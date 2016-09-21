@@ -242,6 +242,7 @@ before packages are loaded. If you are unsure, you should try in setting them in
   (setq-default c-basic-offset 4)
   (setq evil-shift-width 4)
   (setq-default indent-tabs-mode t)
+  (setq vc-follow-symlinks t)
   )
 
 (defun dotspacemacs/user-config ()
