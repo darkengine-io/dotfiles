@@ -60,3 +60,5 @@ keychain $HOME/.ssh/id_rsa -q
 source $HOME/.keychain/$(hostname)-sh
 
 alias fff="git pull --ff-only && git fat pull"
+
+alias emacs="emacsclient -c -a ''"
