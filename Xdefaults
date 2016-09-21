@@ -29,7 +29,6 @@ URxvt.keysym.M-Escape:      perl:keyboard-select:activate
 URxvt.keysym.M-s:           perl:keyboard-select:search
 URxvt.iso14755: False
 URxvt.matcher.button: 1
-URxvt.colorUL: #2960C7
 urxvt.depth: 8
 !URxvt.transparent: false
 URxvt.scrollTtyOutput: false
@@ -40,8 +39,28 @@ urxvt*saveLines: 500
 URxvt*keysym.Home: \033[1~
 URxvt*keysym.End: \033[4~
 
-*color12:                       #547eff
-*color4: #554DFF
+! Molokai theme
+urxvt.depth:        32
+urxvt.background:   #272822
+URxvt*foreground:   #F8F8F2
+URxvt*cursorColor:  #FFFFFF
+
+URxvt*color0:       #20240e
+URxvt*color1:       #f70057
+URxvt*color2:       #86c30d
+URxvt*color3:       #beb244
+URxvt*color4:       #40cae4
+URxvt*color5:       #fb35ea
+URxvt*color6:       #74dbcd
+URxvt*color7:       #f8f8f2
+URxvt*color8:       #5D5D5D
+URxvt*color9:       #FF361E
+URxvt*color10:      #7BC91F
+URxvt*color11:      #FFD00A
+URxvt*color12:      #0071FF
+URxvt*color13:      #FF1D62
+URxvt*color14:      #4BB8FD
+URxvt*color15: #d0d0d0
 
 URxvt.inputMethod: ibus
 URxvt.preeditType: OverTheSpot
