@@ -274,6 +274,9 @@ you should place your code here."
   (setq mouse-wheel-progressive-speed nil) ;; don't accelerate scrolling
   (setq mouse-wheel-follow-mouse t) ;; scroll window under mouse
   (setq linum-format "%4d \u2502 ")
+  (setq ranger-width-preview 0.55)
+  (setq ranger-max-preview-size 25)
+  (setq ranger-cleanup-on-disable t)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
