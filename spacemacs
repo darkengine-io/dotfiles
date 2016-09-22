@@ -18,31 +18,49 @@ values."
    ;; of a list then all discovered layers will be installed.
    dotspacemacs-configuration-layers
    '(
-     ;; ----------------------------------------------------------------
-     ;; Example of useful layers you may want to use right away.
-     ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
-     ;; <M-m f e R> (Emacs style) to install them.
-     ;; ----------------------------------------------------------------
-     ;; auto-completion
-     ;; better-defaults
-     emacs-lisp
-     ;; git
-     ;; markdown
-     ;; org
+     org
      (shell :variables
             shell-default-height 30
             shell-default-position 'bottom)
-     ;; spell-checking
-     ;; syntax-checking
-     ;; version-control
+     syntax-checking
+
+     ansible
+     dockerfile
+     markdown
+     common-lisp
+     c-c++
+     elixir
+     erlang
+     emacs-lisp
+     go
+     haskell
+     latex
+     python
+     racket
+     ruby
+     scheme
+     vimscript
+     yaml
+
+     git
+     github
+     version-control
+     (ranger :variables
+             ranger-show-preview t)
+     vagrant
      )
+
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
    dotspacemacs-additional-packages '()
    ;; A list of packages and/or extensions that will not be install and loaded.
-   dotspacemacs-excluded-packages '()
+   dotspacemacs-excluded-packages '(
+                                    avy
+                                    ace-jump-helm-line
+                                    ace-window
+                                    ace-link)
    ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that
    ;; are declared in a layer which is not a member of
    ;; the list `dotspacemacs-configuration-layers'. (default t)
@@ -260,4 +278,3 @@ you should place your code here."
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
-
