@@ -2,7 +2,7 @@
 	pager = less -r
 	excludesfile = ~/.gitignore
 [user]
-	email = simon@piston.pw
+	email = sm@desu.ne.jp
 	name = Simon McFarlane
 [push]
 	default = simple
