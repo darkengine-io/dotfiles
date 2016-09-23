@@ -48,6 +48,8 @@ values."
      (ranger :variables
              ranger-show-preview t)
      vagrant
+
+     games
      )
 
    ;; List of additional packages that will be installed without being
