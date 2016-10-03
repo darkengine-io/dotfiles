@@ -137,6 +137,7 @@ bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # mute sound
 bindsym XF86AudioPlay exec --no-startup-id mpc toggle
 bindsym XF86AudioNext exec --no-startup-id mpc next
 bindsym XF86AudioPrev exec --no-startup-id mpc prev
+bindsym XF86AudioMicMute exec --no-startup-id eject
 # capture XF86Reload because the K70 sends that keycode when changing backlight brightness
 # without this, Chromium reloads when the brightness changes
 bindsym XF86Reload exec --no-startup-id true
