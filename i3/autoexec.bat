@@ -1,7 +1,7 @@
 #!/bin/sh
 xscreensaver -no-splash &
 feh --bg-fill ~/.wallpaper.jpg &
-redshift -l 45.5236111:-122.675 -t 6500:4200 &
+redshift -l 45.5236111:-122.675 -t 6500:3800 &
 
 case $( uname -s ) in
 Linux)
