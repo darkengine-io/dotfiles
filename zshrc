@@ -26,6 +26,11 @@ then
 fi
 
 export PROMPT='%F{red}%M%f %F{blue}%~%f %# '
+if type gem > /dev/null; then
+    GEM_HOME=$(ls -t -U | ruby -e 'puts Gem.user_dir')
+    GEM_PATH=$GEM_HOME
+    export PATH=$PATH:$GEM_HOME/bin
+fi
 
 alias gs="git status"
 alias gd="git diff"
