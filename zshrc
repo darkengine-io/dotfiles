@@ -71,6 +71,7 @@ alias htop="htop -d 10"
 keychain $HOME/.ssh/id_rsa -q
 source $HOME/.keychain/$(hostname)-sh
 
+alias ff="git pull --ff-only"
 alias fff="git pull --ff-only && git fat pull"
 
 alias emacs="emacsclient -c -a ''"
