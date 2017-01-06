@@ -14,6 +14,15 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+settitle() {
+    print -Pn "\033k$1\033\\"
+}
+
+export PROMPT='%F{red}%M%f %F{blue}%~%f %# '
+function precmd() {
+    settitle "%~ "
+}
+
 # fix for TRAMP mode
 if [[ "$TERM" == "dumb" ]]
 then
@@ -21,11 +30,9 @@ then
     unsetopt prompt_cr
     unsetopt prompt_subst
     unfunction precmd
-    unfunction preexec
     PS1='$ '
 fi
 
-export PROMPT='%F{red}%M%f %F{blue}%~%f %# '
 if type gem > /dev/null; then
     GEM_HOME=$(ls -t -U | ruby -e 'puts Gem.user_dir')
     GEM_PATH=$GEM_HOME
