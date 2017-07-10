@@ -43,6 +43,7 @@ alias gs="git status"
 alias gd="git diff"
 alias ga="git add -p"
 alias gc="git commit"
+alias gcxdf="git clean -xdf"
 
 alias rainymood="mpv --no-ytdl http://rainymood.com/audio1110/0.m4a --no-video --loop=inf"
 
