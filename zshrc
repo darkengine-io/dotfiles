@@ -18,7 +18,7 @@ settitle() {
     print -Pn "\033k$1\033\\"
 }
 
-export PROMPT='%F{red}%M%f %F{blue}%~%f %# '
+export PROMPT='%F{red}%m%f %F{blue}%~%f %# '
 function precmd() {
     settitle "%~ "
 }
