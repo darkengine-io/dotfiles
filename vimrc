@@ -1,7 +1,7 @@
 if has("gui_running")
 	set guioptions-=T
-	if has("gui_gtk2")
-		set guifont=Terminus\ 8
+	if has("gui_gtk3")
+		set guifont=xos4\ Terminus\ 8
 		set guioptions-=r
 		set guioptions-=m
 	elseif has("gui_win32")
