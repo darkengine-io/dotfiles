@@ -31,6 +31,7 @@ Plug 'MattesGroeger/vim-bookmarks'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
+Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
 highlight clear SignColumn
 
@@ -41,3 +42,5 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 
 let g:airline_theme = 'jellybeans'
+
+let g:ctrlp_cmd = 'CtrlPBuffer'
