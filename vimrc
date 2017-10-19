@@ -44,3 +44,7 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline_theme = 'jellybeans'
 
 let g:ctrlp_cmd = 'CtrlPBuffer'
+
+let g:airline_extensions = ['tabline']
+let g:airline_section_z = ''
+set noshowmode
