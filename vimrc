@@ -48,3 +48,6 @@ let g:ctrlp_cmd = 'CtrlPBuffer'
 let g:airline_extensions = ['tabline']
 let g:airline_section_z = ''
 set noshowmode
+
+nnoremap <silent> <C-K> :bn<CR>
+nnoremap <silent> <C-J> :bp<CR>
