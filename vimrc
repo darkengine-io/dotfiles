@@ -49,5 +49,7 @@ let g:airline_extensions = ['tabline']
 let g:airline_section_z = ''
 set noshowmode
 
-nnoremap <silent> <C-K> :bn<CR>
-nnoremap <silent> <C-J> :bp<CR>
+let mapleader = ' '
+
+nnoremap <silent> <Leader>j :bn<CR>
+nnoremap <silent> <Leader>k :bp<CR>
