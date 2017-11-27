@@ -18,6 +18,7 @@ set ignorecase
 
 set ts=4 sts=0 sw=4 noexpandtab
 autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
+au BufNewFile,BufRead *.go setlocal noexpandtab ts=4 sw=4 sts=4
 
 set backspace=indent,eol,start
 
