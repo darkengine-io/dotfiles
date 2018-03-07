@@ -1,1 +1,1 @@
-vim +PlugInstall +PlugUpdate +PlugClean +qall > /dev/null < /dev/tty
+vim +PlugInstall +PlugUpdate +PlugClean! +qall > /dev/null < /dev/tty
