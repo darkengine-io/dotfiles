@@ -1,69 +1,33 @@
-! urxvt --------------------------------------------------------------- 
-
-*background: #080808
-*foreground: #BDBDBD
-
-URxvt.scrollBar: off
-URxvt*font:  xft:xos4 Terminus:medium:pixelsize=8
-URxvt*boldFont:
-URxvt*italicFont:
-URxvt*bolditalicFont:
-URxvt*termName:rxvt-unicode-256color
-URxvt.jumpScroll: false
-URxvt.saveLines: 32
-URxvt.internalBorder: 0
-URxvt*loginShell: true
-
-!*mapAlert:         false
-!*visualBell:       galse
-*urgentOnBell:     true
-
-URxvt.url-launcher: /usr/bin/firefox
-URxvt.perl-ext-common:      default,clipboard,url-select,keyboard-select
-URxvt.url-select.launcher: firefox
-URxvt.url-select.underline: true
-URxvt.keysym.Shift-Control-V: perl:clipboard:paste
-URxvt.keysym.Shift-Control-C: perl:clipboard:copy
-URxvt.keysym.M-u:           perl:url-select:select_next
-URxvt.keysym.M-Escape:      perl:keyboard-select:activate
-URxvt.keysym.M-s:           perl:keyboard-select:search
-URxvt.iso14755: False
-URxvt.matcher.button: 1
-urxvt.depth: 8
-!URxvt.transparent: false
-URxvt.scrollTtyOutput: false
-URxvt.scrollWithBuffer: true
-URxvt.scrollTtyKeypress: true
-urxvt*secondaryScroll: true
-urxvt*saveLines: 500
-URxvt*keysym.Home: \033[1~
-URxvt*keysym.End: \033[4~
-
 ! Molokai theme
-urxvt.depth:        32
-urxvt.background:   #191A16
-URxvt*foreground:   #F8F8F2
-URxvt*cursorColor:  #FFFFFF
+xterm*background:   #191A16
+xterm*foreground:   #F8F8F2
+xterm*cursorColor:  #FFFFFF
 
-URxvt*color0:       #20240e
-URxvt*color1:       #f70057
-URxvt*color2:       #86c30d
-URxvt*color3:       #beb244
-URxvt*color4:       #40cae4
-URxvt*color5:       #fb35ea
-URxvt*color6:       #74dbcd
-URxvt*color7:       #f8f8f2
-URxvt*color8:       #5D5D5D
-URxvt*color9:       #FF361E
-URxvt*color10:      #7BC91F
-URxvt*color11:      #FFD00A
-URxvt*color12:      #0071FF
-URxvt*color13:      #FF1D62
-URxvt*color14:      #4BB8FD
-URxvt*color15: #d0d0d0
+xterm*color0:       #20240e
+xterm*color1:       #f70057
+xterm*color2:       #86c30d
+xterm*color3:       #beb244
+xterm*color4:       #40cae4
+xterm*color5:       #fb35ea
+xterm*color6:       #74dbcd
+xterm*color7:       #f8f8f2
+xterm*color8:       #5D5D5D
+xterm*color9:       #FF361E
+xterm*color10:      #7BC91F
+xterm*color11:      #FFD00A
+xterm*color12:      #0071FF
+xterm*color13:      #FF1D62
+xterm*color14:      #4BB8FD
+xterm*color15:      #d0d0d0
 
-URxvt.inputMethod: ibus
-URxvt.preeditType: OverTheSpot
+xterm*faceName: xos4 Terminus:size=8
+xterm*VT100.Translations: #override \
+                 Ctrl Alt <Key>V:    insert-selection(CLIPBOARD) \n\
+                 Ctrl Alt <Key>C:    copy-selection(CLIPBOARD)
 
-URxvt.cursorBlink: true
-URxvt.pointerBlank: true
+xterm*faceNameDoublesize: MS Gothic
+!xterm*backarrowKey: false
+xterm*termName: xterm-256color
+xterm*bellIsUrgent: true
+ xterm.*backarrowKey: false
+ XTerm*ttyModes:         erase ^?
