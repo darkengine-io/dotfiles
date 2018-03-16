@@ -25,7 +25,7 @@ let g:jellybeans_use_gui_italics = 0
 let g:molokai_original = 1
 let g:rehash256 = 1
 colorscheme molokai
-let g:cpp_member_variable_highlight = 1
+let g:cpp_member_variable_highlight = 0
 let g:cpp_class_decl_highlight = 1
 let g:deoplete#enable_at_startup = 1
 
