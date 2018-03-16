@@ -21,7 +21,7 @@ exec --no-startup-id /home/simon/.i3/autoexec.bat
 # right-to-left text rendering, you should instead use pango for rendering and
 # chose a FreeType font, such as:
 #font pango:Tahoma 9
-#font -*-terminus-medium-r-*-*-12-*-*-*-*-*-*-*
+font -*-terminus-medium-r-*-*-12-*-*-*-*-*-*-*
 #font -*-profont-*-*-*-*-8-*-*-*-*-*-*-*
 #font -*-*-medium-r-*-*-10-*-*-*-*-*-*-*
 
