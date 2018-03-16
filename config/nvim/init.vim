@@ -29,6 +29,13 @@ let g:cpp_member_variable_highlight = 1
 let g:cpp_class_decl_highlight = 1
 let g:deoplete#enable_at_startup = 1
 
+if has('unix')
+	let uname = substitute(system('uname'), '\n', '', '')
+	if uname == 'OpenBSD'
+		let g:easytags_cmd = '/usr/local/bin/ectags'
+	endif
+endif
+
 call plug#begin('~/.config/nvim/plugged')
 Plug 'MattesGroeger/vim-bookmarks'
 Plug 'vim-airline/vim-airline'
