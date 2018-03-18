@@ -31,3 +31,5 @@ xterm*termName: xterm-256color
 xterm*bellIsUrgent: true
  xterm.*backarrowKey: false
  XTerm*ttyModes:         erase ^?
+ XTerm*metaSendsEscape: true
+ XTerm.omitTranslation: fullscreen
