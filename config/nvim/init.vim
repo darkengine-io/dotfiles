@@ -69,3 +69,4 @@ let mapleader = ' '
 
 nnoremap <silent> <Leader>j :bn<CR>
 nnoremap <silent> <Leader>k :bp<CR>
+nnoremap    <F5>   :make<CR>
