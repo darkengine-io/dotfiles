@@ -12,6 +12,7 @@ endif
 syntax on
 set number
 set background=dark
+set termguicolors
 set mouse=a
 set ignorecase
 
