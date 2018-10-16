@@ -85,5 +85,3 @@ pickvim () {
 	fi
 }
 alias vim=pickvim
-
-fortune -a
