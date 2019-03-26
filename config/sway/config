@@ -199,7 +199,7 @@ client.urgent           #2F343A #900000 #FFFFFF #900000   #900000
 client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
 
 input 1:1:AT_Translated_Set_2_keyboard {
-	xkb_options ctrl:nocaps,altwin:swap_alt_win3,altwin:swap_alt_win,altwin:swap_alt_win
+	xkb_options ctrl:nocaps,altwin:swap_alt_win
 }
 
 input 2:7:SynPS/2_Synaptics_TouchPad {
