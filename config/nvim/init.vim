@@ -22,9 +22,7 @@ au BufNewFile,BufRead *.go setlocal noexpandtab ts=4 sw=4 sts=4
 
 set backspace=indent,eol,start
 
-let g:jellybeans_use_gui_italics = 0
 let g:molokai_original = 1
-let g:rehash256 = 1
 colorscheme molokai
 let g:cpp_member_variable_highlight = 0
 let g:cpp_class_decl_highlight = 1
@@ -57,6 +55,10 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 
 let g:airline_theme = 'jellybeans'
+autocmd VimEnter *
+   \ let g:airline#themes#jellybeans#palette.tabline = {
+   \    'airline_tabsel':       ['#ffa0a6','#8A123A',231,88,''],
+   \ } | :AirlineRefresh
 
 let g:ctrlp_map = '<c-o>'
 let g:ctrlp_cmd = 'CtrlPBuffer'

@@ -10,9 +10,6 @@
 set $mod Mod4
 set $mod2 Mod1
 
-exec --no-startup-id /home/simon/.i3/autoexec.bat
-
-# Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
 #font -misc-fixed-medium-r-normal--20-120-75-75-C-70-iso10646-1
 #font pango:ProFont 8 
@@ -20,8 +17,8 @@ exec --no-startup-id /home/simon/.i3/autoexec.bat
 # clear in small sizes. However, if you need a lot of unicode glyphs or
 # right-to-left text rendering, you should instead use pango for rendering and
 # chose a FreeType font, such as:
-#font pango:Tahoma 9
-font -*-terminus-medium-r-*-*-12-*-*-*-*-*-*-*
+font pango:xos4 Terminus 8
+#font -*-terminus-medium-r-*-*-12-*-*-*-*-*-*-*
 #font -*-profont-*-*-*-*-8-*-*-*-*-*-*-*
 #font -*-*-medium-r-*-*-10-*-*-*-*-*-*-*
 
@@ -29,7 +26,7 @@ font -*-terminus-medium-r-*-*-12-*-*-*-*-*-*-*
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id xterm
+bindsym $mod+Return exec --no-startup-id termite
 
 # Browser
 bindsym $mod+c exec firefox
@@ -128,8 +125,9 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-msg exit"
 # lock the screen
-bindsym Pause exec "xscreensaver-command -lock"
-bindsym XF86ScreenSaver exec "xscreensaver-command -lock"
+bindsym Pause exec --no-startup-id swaylock -f && swayidle -w \
+	timeout 1 'swaymsg "output * dpms off"' \
+	resume    'swaymsg "output * dpms on"; pkill -nx swayidle'
 #change volume
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5% #decrease sound volume
@@ -190,17 +188,7 @@ bar {
 new_window none
 
 # gnome-calculator
-for_window [class="Gnome-calculator"] floating enable;
-# Steam (now disabled)
-#for_window [class="Steam"] floating enable;
-# UT99
-for_window [class="SDL_App"] floating enable;
-# HL2/CS
-for_window [class="hl2_linux"] floating enable;
-# XFreeRDP
-for_window [class="xfreerdp"] floating disable;
-# Guake
-for_window [class="Main.py"] floating enable;
+for_window [app_id="gnome-calculator"] floating enable;
 
 client.background #162025
 
@@ -210,3 +198,28 @@ client.unfocused        #704252 #472a33 #ffa0a6 #292D2E   #222222
 client.urgent           #2F343A #900000 #FFFFFF #900000   #900000
 client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
 
+input 1:1:AT_Translated_Set_2_keyboard {
+	xkb_options ctrl:nocaps,altwin:swap_alt_win3,altwin:swap_alt_win,altwin:swap_alt_win
+}
+
+input 2:7:SynPS/2_Synaptics_TouchPad {
+    dwt enabled
+    natural_scroll enabled
+    middle_emulation enabled
+}
+
+output "*" background /home/simon/.wallpaper.jpg fill
+
+exec_always bin/import-gsettings \
+    gtk-theme:gtk-theme-name \
+    icon-theme:gtk-icon-theme-name \
+    cursor-theme:gtk-cursor-theme-name
+
+
+exec swayidle -w \
+         timeout 305 'swaylock -f' \
+         timeout 300 'swaymsg "output * dpms off"' \
+              resume 'swaymsg "output * dpms on"' \
+         before-sleep 'swaylock -f'
+
+include custom/*
