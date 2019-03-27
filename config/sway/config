@@ -26,7 +26,7 @@ font pango:xos4 Terminus 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id termite
+bindsym $mod+Return exec --no-startup-id xterm
 
 # Browser
 bindsym $mod+c exec firefox

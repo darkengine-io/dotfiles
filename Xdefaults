@@ -1,6 +1,6 @@
 ! Molokai theme
-xterm*background:   #191A16
-xterm*foreground:   #F8F8F2
+xterm*background:   #272822
+xterm*foreground:   #f8f8f2
 xterm*cursorColor:  #FFFFFF
 
 xterm*color0:       #20240e
