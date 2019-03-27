@@ -75,13 +75,3 @@ source $HOME/.keychain/$(hostname)-sh
 
 alias ff="git pull --ff-only"
 alias fff="git pull --ff-only && git fat pull"
-
-VIMBINARY="$(which vim)"
-pickvim () {
-	if which nvim > /dev/null; then
-		nvim "$@"
-	else
-		"$VIMBINARY" "$@"
-	fi
-}
-alias vim=pickvim
