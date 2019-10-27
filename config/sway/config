@@ -227,3 +227,6 @@ smart_gaps on
 smart_borders on
 hide_edge_borders smart
 default_border pixel 3
+
+for_window [class="XTerm"] opacity 0.9
+for_window [app_id="termite"] opacity 0.9
