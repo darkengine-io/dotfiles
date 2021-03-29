@@ -1,4 +1,4 @@
-#
+
 # Should you change your keyboard layout somewhen, delete
 # this file and re-run i3-config-wizard(1).
 #
@@ -26,13 +26,7 @@ font Anonymous Pro 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id xterm
-
-# Browser
-bindsym $mod+c exec firefox
-
-# Ranger
-bindsym $mod+b exec urxvt -e ranger
+bindsym $mod+Return exec --no-startup-id alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -42,7 +36,7 @@ bindsym $mod+Shift+q kill
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-bindsym $mod+d exec --no-startup-id rofi -show drun
+bindsym $mod+d exec --no-startup-id wofi --show drun
 
 # change focus
 bindsym $mod+h focus left
@@ -131,14 +125,11 @@ bindsym Pause exec --no-startup-id swaylock -f && swayidle -w \
 #change volume
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5% #decrease sound volume
-bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # mute sound
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
 bindsym XF86AudioPlay exec --no-startup-id mpc toggle
 bindsym XF86AudioNext exec --no-startup-id mpc next
 bindsym XF86AudioPrev exec --no-startup-id mpc prev
-bindsym XF86AudioMicMute exec --no-startup-id eject
-# capture XF86Reload because the K70 sends that keycode when changing backlight brightness
-# without this, Chromium reloads when the brightness changes
-bindsym XF86Reload exec --no-startup-id true
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -196,8 +187,9 @@ client.unfocused        #704252 #472a33 #ffa0a6 #292D2E   #222222
 client.urgent           #2F343A #900000 #FFFFFF #900000   #900000
 client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
 
-input 1:1:AT_Translated_Set_2_keyboard {
+input * {
 	xkb_options ctrl:nocaps,altwin:swap_alt_win
+    xkb_layout jp
 }
 
 input 2:7:SynPS/2_Synaptics_TouchPad {
@@ -220,6 +212,8 @@ exec swayidle -w \
               resume 'swaymsg "output * dpms on"' \
          before-sleep 'swaylock -f'
 
+exec_always fcitx5 -d --replace
+
 include custom/*
 
 gaps inner 30
@@ -228,5 +222,3 @@ smart_borders on
 hide_edge_borders smart
 default_border pixel 3
 
-for_window [class="XTerm"] opacity 0.9
-for_window [app_id="termite"] opacity 0.9
