@@ -1,0 +1,67 @@
+{
+	"layer": "top",
+	"position": "bottom",
+	"modules-left": ["sway/workspaces"],
+	"modules-center": [],
+	"modules-right": ["tray", "pulseaudio", "backlight", "network", "disk", "battery", "clock"],
+	"sway/workspaces": {
+		"disable-scroll": true,
+		"disable-click": true,
+	},
+	"sway/workspaces" : {
+		"enable-bar-scroll": true,
+		"disable-scroll-wraparound": true
+	},
+	"tray": {
+		"spacing": 10
+	},
+	"clock": {
+		"format": "{:%Y-%m-%d %R:%S}",
+		"interval": 1
+	},
+	"cpu": {
+		"format": " {usage}%"
+	},
+	"memory": {
+		"format": " {}%"
+	},
+	"backlight": {
+		"format": "{icon} {percent}%",
+		"format-icons": [""]
+	},
+	"battery": {
+		"bat": "BAT0",
+		"full-at": 95,
+		"states": {
+			"good": 95,
+			"warning": 30,
+			"critical": 15
+		},
+		"format": "{icon} {capacity}%",
+		"format-icons": ["", "", "", "", ""]
+	},
+	"disk": {
+		"format": " {free}"
+	},
+	"network": {
+		"format-wifi": " {essid}",
+		"format-disconnected": "⚠ Disconnected"
+	},
+	"pulseaudio": {
+		"format": "{icon} {volume}%",
+		"format-muted": "",
+		"format-icons": {
+			"headphones": "",
+			"default": ["", ""]
+		},
+		"on-click": "pavucontrol"
+	},
+	"wlr/taskbar": {
+		"format": "{icon}",
+		"icon-size": 16,
+		"tooltip-format": "{title}",
+		"on-click": "activate",
+		"on-click-middle": "close",
+		"all_workspaces": false
+	}
+}
